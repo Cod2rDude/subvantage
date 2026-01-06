@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Cod2rDude/subvantage/internal/assets"
 )
 
 func main() {
-	fmt.Println(data.Banner)
+	fmt.Println(assets.Banner)
 }
