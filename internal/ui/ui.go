@@ -34,7 +34,10 @@ func Log(option string, message string) {
 
 func Startup() {
 	fmt.Println(color.Paint(color.Green, banner))
-	fmt.Println(color.Paint(color.Green, "Developed by: ") + color.Paint(color.Blue, "Cod2rDude"))
+	fmt.Println(color.Paint(
+		color.Green, "| Developed by: ") + color.Paint(color.Blue, "Cod2rDude") +
+		color.Paint(color.Green, "                                                                |"))
+	fmt.Println(color.Paint(color.Green, "+----------------------------------------------------------------------------------------+"))
 	fmt.Println("")
 	Log("info", startUpString1)
 	Log("warning", "Use with caution, you are responsible for your actions.")
