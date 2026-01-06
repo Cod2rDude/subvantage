@@ -62,6 +62,7 @@ func Search(opts types.Options) {
 	}
 
 	//TODO: Retry
+	fmt.Println("")
 	ui.Log("info", "Bingo!")
 	ui.Log("info", fmt.Sprintf("Found %d subdomains.", len(uniqueSubs)))
 

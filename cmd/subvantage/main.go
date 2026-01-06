@@ -36,7 +36,7 @@ func main() {
 	var opts types.Options
 	opts.Domain = "google.com"
 	opts.Mode = types.ModeSearch
-	opts.OutputFile = "blabla/test.txt"
+	opts.OutputFile = "test.txt"
 
 	printOptions(opts)
 
