@@ -11,8 +11,10 @@ import (
 //go:embed assets/banner.txt
 var banner string
 
-var startUpString1 = "Running 'subvantage' " + config.Version
+var toolname = "subvantage"
+var startUpString1 = "Running '" + toolname + "' " + config.Version
 
+// Public Functions
 func Log(option string, message string) {
 	fmt.Print("[")
 
@@ -30,7 +32,6 @@ func Log(option string, message string) {
 	fmt.Println("] " + message)
 }
 
-// Public Functions
 func Startup() {
 	fmt.Println(color.Paint(color.Green, banner))
 	fmt.Println(color.Paint(color.Green, "Developed by: ") + color.Paint(color.Blue, "Cod2rDude"))

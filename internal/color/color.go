@@ -1,5 +1,6 @@
 package color
 
+// Public Constants
 const (
 	Reset  = "\x1b[0m"
 	Green  = "\x1b[32m"
@@ -9,6 +10,7 @@ const (
 	Bold   = "\x1b[1m"
 )
 
+// Public Functions
 func Paint(colorCode string, text string) string {
 	return colorCode + text + Reset
 }

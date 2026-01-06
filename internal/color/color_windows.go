@@ -15,3 +15,5 @@ func init() {
 	outMode |= windows.ENABLE_PROCESSED_OUTPUT | windows.ENABLE_VIRTUAL_TERMINAL_PROCESSING
 	_ = windows.SetConsoleMode(out, outMode)
 }
+
+// https://github.com/fatih/color/blob/main/color_windows.go

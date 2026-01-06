@@ -9,6 +9,7 @@ import (
 	"github.com/Cod2rDude/subvantage/internal/types"
 )
 
+// Public Functions
 func GetInteractiveInput() types.Options {
 	reader := bufio.NewReader(os.Stdin)
 	var opts types.Options
