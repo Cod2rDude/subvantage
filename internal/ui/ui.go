@@ -25,6 +25,8 @@ func Log(option string, message string) {
 		fmt.Print(color.Paint(color.Orange, "WARNING"))
 	case "error":
 		fmt.Print(color.Paint(color.Red, "ERROR"))
+	case "tool":
+		fmt.Print(color.Paint(color.Green, "TOOL"))
 	default:
 		fmt.Print(color.Paint(color.Blue, "INFO"))
 	}

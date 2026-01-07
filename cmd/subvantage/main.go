@@ -9,21 +9,21 @@ import (
 )
 
 func printOptions(opts types.Options) {
-	ui.Log("info", "Starting to finding subdomains in domain '"+opts.Domain+"'")
+	ui.Log("tool", "Starting to finding subdomains in domain '"+opts.Domain+"'")
 
 	switch opts.Mode {
 	case types.ModeBruteForce:
-		ui.Log("info", "Using bruteforce method.")
+		ui.Log("tool", "Using bruteforce method.")
 	case types.ModeCombined:
-		ui.Log("info", "Using bruteforce + search method.")
+		ui.Log("tool", "Using bruteforce + search method.")
 	case types.ModeSearch:
-		ui.Log("info", "Using search method.")
+		ui.Log("tool", "Using search method.")
 	default:
-		ui.Log("info", "Using unknown method.")
+		ui.Log("tool", "Using unknown method.")
 	}
 
 	if tool.FileExists(opts.OutputFile) {
-		ui.Log("info", "Output will be saved in '"+opts.OutputFile+"'")
+		ui.Log("tool", "Output will be saved in '"+opts.OutputFile+"'")
 	}
 
 	fmt.Println("")
