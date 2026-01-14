@@ -6,4 +6,4 @@ first:
  * let user change max retries (of course it is still limited by code it self)
  * add multiple sources (alienvault, etc...)
 
-
+its a tool for finding subdomains of a domain via various ways.
